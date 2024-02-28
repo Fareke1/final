@@ -1,0 +1,12 @@
+.dialog {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .close-btn {
+    float: right;
+    cursor: pointer;
+  }

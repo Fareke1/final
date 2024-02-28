@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+  <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 disabled">Main</a></li>
+          <li><a href="/users.html" class="nav-link px-2 link-body-emphasis">Users</a></li>
+        </ul>
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="/profile/profile.html">Profile</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="javascript:void(0)" id="logout">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-inner">
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <button type="button" id="openDialogButton">Create Image</button>
+    <dialog id="createImageDialog" class="dialog">
+      <div class="dialog-content">
+        <button id="cancelSendBtn" class="close-btn">×</button>
+        <h2>Create Image</h2>
+        <form id="sendEmailForm">
+          <div class="form-group">
+            <label for="Title">Title</label>
+            <input type="text" id="title" name="Title" required>
+          </div>
+          <div class="form-group">
+            <label for="Description">Description:</label>
+            <input type="text" id="description" name="description" required>
+          </div>
+          <div class="form-group">
+            <label for="URL">URL:</label>
+            <input type="text" id="url" name="url" required>
+          </div>
+          <button type="submit">Create</button>
+        </form>
+      </div>
+    </dialog>
+    <dialog id="updateImageDialog" class="dialog">
+      <div class="dialog-content">
+        <button id="cancelUpdateBtn" class="close-btn">×</button>
+        <h2>Update Image</h2>
+        <form id="sendUpdateForm">
+          <div class="form-group">
+            <label for="Title">Title</label>
+            <input type="text" id="updateTitle" name="Title" required>
+          </div>
+          <div class="form-group">
+            <label for="Description">Description:</label>
+            <input type="text" id="updateDescription" name="description" required>
+          </div>
+          <div class="form-group">
+            <label for="URL">URL:</label>
+            <input type="text" id="updateUrl" name="url" required>
+          </div>
+          <button type="submit">Update</button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

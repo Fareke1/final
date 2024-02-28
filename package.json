@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "nodemailer": "^6.9.9",
+    "nodemon": "^3.0.3",
+    "qrcode": "^1.5.3",
+    "socket.io": "^4.7.4"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "name": "final",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}

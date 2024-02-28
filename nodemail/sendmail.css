@@ -1,0 +1,17 @@
+#sendEmailForm {
+    border-style: groove;
+    border-width: 5px;
+    background-color: #f4f0eb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+#sendEmailForm input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
